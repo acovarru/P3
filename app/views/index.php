@@ -65,28 +65,24 @@ ga('send', 'pageview');
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="#">TEST DEPOT</a>
+            <a class="pure-menu-heading" href="#">Developer's Best Friend</a>
 
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-
                 <li class="menu-item-divided pure-menu-selected">
-                    <a href="#">Selenium</a>
+                    <a href="#">Lorem Ipsum Generator</a>
                 </li>
 
-                <li><a href="#">Jenkins</a></li>
-                <li><a href="#">JUnit</a></li>
-                <li><a href="#">Ant</a></li>
-                <li><a href="#">Maven</a></li>
-                <li><a href="#">TestNG</a></li>
+                <li><a href="#">Random User Generator</a></li>
+                <li><a href="#">XKCD Password</a></li>
+             
             </ul>
         </div>
     </div>
 
     <div id="main">
         <div class="header">
-            <h1>Testing Automation Depot</h1>
+            <h1>Developer's Best Friend</h1>
             <h2>Home</h2>
         </div>
 
