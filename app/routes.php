@@ -17,15 +17,10 @@ Route::get('/', function()
 });
 
 
-// about page (app/views/about.blade.php)
-	Route::get('about', function()
-	{
-		return View::make('about');
-	});
 	
 
-// app/routes.php
-
-Route::get('my/page', function() {
-    return 'Hello world!';
+Route::get('/XKCD', function()
+{
+	return View::make('XKCD');
 });
+	
