@@ -21,26 +21,47 @@ Route::get('/XKCD', function()
 	return View::make('XKCD');
 });
 	
-Route::get('/Lorem', function() {
-
-$generator = new Badcow\LoremIpsum\Generator();
-$paragraphs = $generator->getParagraphs(5);
-echo implode('<p>', $paragraphs);
-
-});
-
 Route::get('/User', function() {
 
-//require_once '/path/to/Faker/src/autoload.php';
-// alternatively, use another PSR-0 compliant autoloader (like the Symfony2 ClassLoader for instance)
+    $view  = '<form method="POST">';
+    $view .= 'Number of Users : <input type="text" name="title">';
+    $view .= '<input type="submit">';
+    $view .= '</form>';
+    return $view;
 
-// use the factory to create a Faker\Generator instance
+});
+Route::post('/User', function() {
+$input =  Input::all();
+ 
+$post = Input::get('title', false);
+
 $faker = Faker\Factory::create();
 
-for ($i=0; $i < 10; $i++) {
+for ($i=0; $i < $post; $i++) {
   echo $faker->name, "\n";
  
 }
 
+});
+
+Route::get('/Lorem', function() {
+
+    $view  = '<form method="POST">';
+    $view .= 'Number of Paragraphs : <input type="text" name="title">';
+    $view .= '<input type="submit">';
+    $view .= '</form>';
+    return $view;
+
+});
+
+Route::post('/Lorem', function() {
+$input =  Input::all();
+ 
+$post = Input::get('title', false);
+	
+$generator = new Badcow\LoremIpsum\Generator();
+ 
+$paragraphs = $generator->getParagraphs($post);
+echo implode('<p>', $paragraphs);
 
 });
