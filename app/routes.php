@@ -23,11 +23,7 @@ Route::get('/XKCD', function()
 	
 Route::get('/User', function() {
 
-    $view  = '<form method="POST">';
-    $view .= 'Number of Users : <input type="text" name="title">';
-    $view .= '<input type="submit">';
-    $view .= '</form>';
-    return $view;
+    return View::make('User');
 
 });
 Route::post('/User', function() {
@@ -46,11 +42,7 @@ for ($i=0; $i < $post; $i++) {
 
 Route::get('/Lorem', function() {
 
-    $view  = '<form method="POST">';
-    $view .= 'Number of Paragraphs : <input type="text" name="title">';
-    $view .= '<input type="submit">';
-    $view .= '</form>';
-    return $view;
+    return View::make('Lorem');
 
 });
 
