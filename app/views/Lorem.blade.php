@@ -7,9 +7,9 @@
 @section('content')
 
      
-            <h2 class="content-subhead">How </h2>
+            <h2 class="content-subhead">Lorem Ipsum Generator </h2>
             <p>
-                To use this layout, you can 
+                Using this application you can create random text in latin to be used as filler text on website/application development. You have the option to select how many paragraphs to generate.
             </p>
 
             <form method="post">

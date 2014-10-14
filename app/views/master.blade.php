@@ -48,12 +48,11 @@ ga('send', 'pageview');
 
             <ul>
                 <li><a href="/">Home</a></li>
-                <li class="menu-item-divided pure-menu-selected">
-                    <a href="Lorem">Lorem Ipsum </a>
-                </li>
-
+                <li><a href="Lorem">Lorem Ipsum </a></li>
                 <li><a href="User">Random User </a></li>
-                <li><a href="XKCD">XKCD Password</a></li>
+                <li><a href="Base32Encoder">Base32 Encoder</a></li>
+                <li><a href="Base32Decoder">Base32 Decoder</a></li>
+               
              
             </ul>
         </div>

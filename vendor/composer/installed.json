@@ -1728,12 +1728,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/fzaninotto/Faker.git",
-            "reference": "1ce76e851997c7ac51d7f76e5b4cd01ae50e607f"
+            "reference": "b6d383161d84092a7a9f5b14db6e2637edbd3a6e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/1ce76e851997c7ac51d7f76e5b4cd01ae50e607f",
-            "reference": "1ce76e851997c7ac51d7f76e5b4cd01ae50e607f",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/b6d383161d84092a7a9f5b14db6e2637edbd3a6e",
+            "reference": "b6d383161d84092a7a9f5b14db6e2637edbd3a6e",
             "shasum": ""
         },
         "require": {
@@ -1743,7 +1743,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2014-10-01 07:35:35",
+        "time": "2014-10-14 14:30:56",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1771,6 +1771,62 @@
             "data",
             "faker",
             "fixtures"
+        ]
+    },
+    {
+        "name": "christian-riesen/base32",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ChristianRiesen/base32.git",
+            "reference": "e77dc892d71b1fbf98ddab409befe925d8ccbdc9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ChristianRiesen/base32/zipball/e77dc892d71b1fbf98ddab409befe925d8ccbdc9",
+            "reference": "e77dc892d71b1fbf98ddab409befe925d8ccbdc9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*",
+            "satooshi/php-coveralls": "0.*"
+        },
+        "time": "2014-10-09 09:28:27",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Base32\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christian Riesen",
+                "email": "chris.riesen@gmail.com",
+                "homepage": "http://christianriesen.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Base32 encoder/decoder according to RFC 4648",
+        "homepage": "https://github.com/ChristianRiesen/base32",
+        "keywords": [
+            "base32",
+            "decode",
+            "encode",
+            "rfc4648"
         ]
     }
 ]

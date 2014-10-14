@@ -5,17 +5,23 @@
 
 @stop
 @section('content')
-            <h2 class="content-subhead">How </h2>
+            <h2 class="content-subhead">Create Lorem </h2>
             <p>
-                To use this layout, you can 
+                On the Lorem application you can create filler text in order to demonstrate graphic elements of your website or application. Lorem Ipsum text is a filler used to show how the actual text will be displayed once a web application is completed.
             </p>
 
-            
-
-           
-
-            <h2 class="content-subhead">Try Resizing your Browser</h2>
+            <h2 class="content-subhead">Create Users</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                On the User application you can create random user data for your applications. Besides creating a random user by first name and last name, you will have the option to create address and phone numbers for users.
+            </p>
+            
+            <h2 class="content-subhead">Base 32 Encode</h2>
+            <p>
+                On the Base 32 Encoder application you can encode arbitrary byte data using the twenty-six letters A–Z and six digits 2–7.
+            </p>
+            
+            <h2 class="content-subhead">Base 32 Decode</h2>
+            <p>
+                On the Base 32 Decoder application you can decode data that has been base 32 encoded.
             </p>
   @stop 

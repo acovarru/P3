@@ -5,16 +5,17 @@
 
 @stop
 @section('content')
-            <h2 class="content-subhead">How </h2>
+            <h2 class="content-subhead">Random User Generator </h2>
             <p>
-                To use this layout, you can 
+                Using this application you can create random users by first name, last name. You can also select to add address and phone number to random user.
             </p>
 
             <form method="post">
        <br>
-       
-       # of Users <input type="text" name="title" size="1">
-       
+            <input type="checkbox" name="address" value="address"> Add address
+        <input type="checkbox" name="phone" value="phone"> Add phone number <br>
+      <br> # of Users <input type="text" name="number" size="1">
+      
       
         <input type="submit" value="generate!"><br>
 

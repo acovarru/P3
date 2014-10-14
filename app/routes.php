@@ -16,9 +16,40 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/XKCD', function()
+use Base32\Base32;
+
+Route::get('/Base32Decoder', function()
 {
-	return View::make('XKCD');
+	return View::make('Base32Decoder');
+});
+
+Route::post('/Base32Decoder', function()
+{
+$input =  Input::all();
+ 
+$post = Input::get('string', false);
+
+$decoded = Base32::decode($post);
+echo $decoded;
+ 
+	return View::make('post');
+});
+
+Route::get('/Base32Encoder', function()
+{
+	return View::make('Base32Encoder');
+});
+
+Route::post('/Base32Encoder', function()
+{
+$input =  Input::all();
+ 
+$post = Input::get('string', false);
+
+$encoded = Base32::encode($post);
+echo $encoded;
+ 
+	return View::make('post');
 });
 	
 Route::get('/User', function() {
@@ -30,18 +61,49 @@ Route::post('/User', function() {
 
 $input =  Input::all();
  
-$post = Input::get('title', false);
+$number = Input::get('number', false);
+
+$address = Input::get('address', false);
+
+$phone = Input::get('phone', false);
 
 $faker = Faker\Factory::create();
 
-for ($i=0; $i < 10; $i++) {
+for ($i=0; $i < $number; $i++) {
+
+if (($address=="address")&&($phone=="phone")){
   echo "<br>";
   echo $faker->name;
   echo "<br>";
   echo $faker->address;
   echo "<br>";
-    echo $faker->phoneNumber;
+  echo $faker->phoneNumber;
   echo "<br>";
+}
+
+if (($phone=="phone")&&($address=="")){
+  echo "<br>";
+  echo $faker->name;
+  echo "<br>";
+  echo $faker->phoneNumber;
+  echo "<br>";
+}
+
+if (($address=="address")&&($phone=="")){
+  echo "<br>";
+  echo $faker->name;
+  echo "<br>";
+  echo $faker->address;
+  echo "<br>";
+}
+
+if (($address=="")&&($phone=="")){
+
+  echo "<br>";
+  echo $faker->name;
+  echo "<br>";
+  }
+  
  
 }
 
