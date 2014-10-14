@@ -30,6 +30,10 @@ $input =  Input::all();
 $post = Input::get('string', false);
 
 $decoded = Base32::decode($post);
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 echo $decoded;
  
 	return View::make('post');
@@ -47,6 +51,10 @@ $input =  Input::all();
 $post = Input::get('string', false);
 
 $encoded = Base32::encode($post);
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 echo $encoded;
  
 	return View::make('post');
@@ -68,6 +76,9 @@ $address = Input::get('address', false);
 $phone = Input::get('phone', false);
 
 $faker = Faker\Factory::create();
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
 for ($i=0; $i < $number; $i++) {
 
@@ -125,6 +136,9 @@ $post = Input::get('title', false);
 $generator = new Badcow\LoremIpsum\Generator();
  
 $paragraphs = $generator->getParagraphs($post);
+echo "<br>";
+echo "<br>";
+echo "<br>";
 echo "<br>";
 echo implode('<p>', $paragraphs);
 
