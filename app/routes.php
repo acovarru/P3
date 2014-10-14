@@ -27,23 +27,32 @@ Route::get('/User', function() {
 
 });
 Route::post('/User', function() {
+
 $input =  Input::all();
  
 $post = Input::get('title', false);
 
 $faker = Faker\Factory::create();
 
-for ($i=0; $i < $post; $i++) {
-  echo $faker->name, "\n";
+for ($i=0; $i < 10; $i++) {
+  echo "<br>";
+  echo $faker->name;
+  echo "<br>";
+  echo $faker->address;
+  echo "<br>";
+    echo $faker->phoneNumber;
+  echo "<br>";
  
 }
+
+return View::make('post');
 
 });
 
 Route::get('/Lorem', function() {
 
     return View::make('Lorem');
-
+  
 });
 
 Route::post('/Lorem', function() {
@@ -54,6 +63,9 @@ $post = Input::get('title', false);
 $generator = new Badcow\LoremIpsum\Generator();
  
 $paragraphs = $generator->getParagraphs($post);
+echo "<br>";
 echo implode('<p>', $paragraphs);
+
+return View::make('post');
 
 });

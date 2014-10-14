@@ -12,29 +12,8 @@
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
-
-
-
-
-  
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="/combo/1.17.16?/css/layouts/side-menu-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/style.css">
-    <!--<![endif]-->
-  
-
-
-
-
-    
-<!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
-<![endif]-->
-
-
-    
+<link rel="stylesheet" href="css/style.css">
+ @yield('href','css/style.css')
 
     
 <script>
@@ -82,30 +61,12 @@ ga('send', 'pageview');
 
     <div id="main">
         <div class="header">
-            <h1>Developer's Best Friend</h1>
-            <h2>Home</h2>
+            @yield('header')
+          
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">How </h2>
-            <p>
-                To use this layout, you can 
-            </p>
-
-            <form method="post">
-       <br>
-       
-       # of Users <input type="text" name="title" size="1">
-       
-      
-        <input type="submit" value="generate!"><br>
-
-    </form> 
-            
-
-
-
- 
+            @yield('content')
         </div>
     </div>
 </div>
