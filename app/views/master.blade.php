@@ -1,21 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
 
     <title>Developer's Best Friend</title>
 
-    
-
-
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
 <link rel="stylesheet" href="css/style.css">
  @yield('href')
-
-    
+  
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,14 +22,8 @@ ga('create', 'UA-41480445-1', 'purecss.io');
 ga('send', 'pageview');
 </script>
 
-
 </head>
 <body>
-
-
-
-
-
 
 <div id="layout">
     <!-- Menu toggle -->
@@ -51,9 +41,7 @@ ga('send', 'pageview');
                 <li><a href="Lorem">Lorem Ipsum </a></li>
                 <li><a href="User">Random User </a></li>
                 <li><a href="Base32Encoder">Base32 Encoder</a></li>
-                <li><a href="Base32Decoder">Base32 Decoder</a></li>
-               
-             
+                <li><a href="Base32Decoder">Base32 Decoder</a></li> 
             </ul>
         </div>
     </div>
@@ -69,13 +57,8 @@ ga('send', 'pageview');
         </div>
     </div>
 </div>
-
-
-
-
-
+   
 <script src="js/ui.js"></script>
-
 
 </body>
 </html>
