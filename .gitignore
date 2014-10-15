@@ -1,3 +1,7 @@
+/bootstrap/compiled.php
+/vendor
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -14,7 +18,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# =========================
+
 # Operating System Files
 # =========================
 
@@ -36,4 +40,4 @@ Icon
 .Trashes
 
 
-/vendor/*
+
