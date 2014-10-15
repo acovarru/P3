@@ -10,7 +10,10 @@
 </p>
 <form method="post">
     <br>
-    String to encode <input type="text" name="string" size="80">
+    String to encode
+    <br>
+    <textarea rows="4" cols="50" name="string"></textarea>
+    <br>
     <input type="submit" value="encode!">
     <br>
 </form>          

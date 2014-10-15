@@ -9,8 +9,12 @@
     Using this application the developer can decode base 32 encoded data. This is useful for testing and validating data stored by the developer's application.
 </p>
 <form method="post">
-    <br> 
-    String to decode <input type="text" name="string" size="80">
-    <input type="submit" value="decode!"><br>
+    <br>
+    String to decode
+    <br>
+    <textarea rows="4" cols="50" name="string"></textarea> 
+    <br>
+    <input type="submit" value="decode!">
+    <br>
 </form>            
 @stop
