@@ -15,7 +15,8 @@ Encode: on the Base 32 Encoder application you can encode arbitrary byte data us
 Decode: on the Base 32 Decoder application you can decode data that has been base 32 encoded.
 
 ## Demo
-Demo with be provided with screencast
+Demo provided with screencast
+http://screencast.com/t/pcURvjlxSZaI
 
 ## Details for teaching team
 No additional details, no login required
@@ -23,9 +24,9 @@ No additional details, no login required
 
 
 ## Outside code
-*Added pure css side menu template from http://purecss.io/layouts/ 
-*Added fzaninotto/Faker package to generate random users
-*Added badcow/lorem-ipsum package to generate lorem ipsum text
-*Added christian-riesen/base32 package to encode and decode base 32 data
+*Makes use of pure css side menu template from http://purecss.io/layouts/ 
+*Makes use of fzaninotto/Faker package to generate random users
+*Makes use of badcow/lorem-ipsum package to generate lorem ipsum text
+*Makes use of christian-riesen/base32 package to encode and decode base 32 data
 
 
