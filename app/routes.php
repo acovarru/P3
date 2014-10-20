@@ -11,6 +11,10 @@
 |
 */
 
+/*
+ * GET Route declared using the Route facade for index page
+ * Returns view of index
+ */
 Route::get('/', function()
 {
 	return View::make('index');
@@ -18,11 +22,21 @@ Route::get('/', function()
 
 use Base32\Base32;
 
+/*
+ * GET Route declared using the Route facade for Base 32 Decoder page
+ * Returns view of Base32Decoder
+ */
 Route::get('/Base32Decoder', function()
 {
 	return View::make('Base32Decoder');
 });
 
+/*
+ * POST route for Base 32 Decoder page
+ * Retrieves the input generated on Base32Decoder GET Route
+ * Generates base 32 decoded string based on input retrieved
+ * Returns view of post
+ */
 Route::post('/Base32Decoder', function()
 {
 $input =  Input::all();
@@ -39,11 +53,21 @@ echo $decoded;
 	return View::make('post');
 });
 
+/*
+ * GET Route declared using the Route facade for Base 32 Encoder page
+ * Returns view of Base32Encoder
+ */
 Route::get('/Base32Encoder', function()
 {
 	return View::make('Base32Encoder');
 });
 
+/*
+ * POST route for Base 32 Encoder page
+ * Retrieves the input generated on Base32Encoder GET Route
+ * Generates base 32 encoded string based on input retrieved
+ * Returns view of post
+ */
 Route::post('/Base32Encoder', function()
 {
 $input =  Input::all();
@@ -59,12 +83,25 @@ echo $encoded;
  
 	return View::make('post');
 });
-	
+
+/*
+ * GET Route declared using the Route facade for User page
+ * Returns view of User
+ */
 Route::get('/User', function() {
 
     return View::make('User');
 
 });
+
+/*
+ * POST route for User page
+ * Retrieves the input generated on User GET Route
+ * Generates random user based on input retrieved
+ * If address selected also generates address for random user
+ * If phone selected also generates phone for random user
+ * Returns view of post
+ */
 Route::post('/User', function() {
 
 $input =  Input::all();
@@ -122,12 +159,22 @@ return View::make('post');
 
 });
 
+/*
+ * GET Route declared using the Route facade for Lorem page
+ * Returns view of Lorem
+ */
 Route::get('/Lorem', function() {
 
     return View::make('Lorem');
   
 });
 
+/*
+ * POST route for Lorem page
+ * Retrieves the input generated on Lorem GET Route
+ * Generates x number of Lorem paragraphs based on input retrieved
+ * Returns view of post
+ */
 Route::post('/Lorem', function() {
 $input =  Input::all();
  

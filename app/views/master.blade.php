@@ -34,7 +34,7 @@
             
             <div id="menu">
                 <div class="pure-menu pure-menu-open">
-                    <a class="pure-menu-heading" href="#">Generate</a>
+                    <a class="pure-menu-heading">Tool Kit</a>
                     
                     <ul>
                         <li><a href="/">Home</a></li>
