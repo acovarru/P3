@@ -16,6 +16,7 @@ Decode: on the Base 32 Decoder application you can decode data that has been bas
 
 ## Demo
 Demo provided with screencast
+
 http://screencast.com/t/pcURvjlxSZaI
 
 ## Details for teaching team
@@ -25,8 +26,11 @@ No additional details, no login required
 
 ## Outside code
 *Makes use of pure css side menu template from http://purecss.io/layouts/ 
+
 *Makes use of fzaninotto/Faker package to generate random users
+
 *Makes use of badcow/lorem-ipsum package to generate lorem ipsum text
+
 *Makes use of christian-riesen/base32 package to encode and decode base 32 data
 
 
